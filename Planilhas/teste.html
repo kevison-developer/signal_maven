@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Upload de Planilha</title>
+</head>
+<body>
+  <h1>Upload de Planilha</h1>
+  <form action="http://localhost:3000/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="file" accept=".xls,.xlsx,.csv">
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>
