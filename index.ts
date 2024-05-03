@@ -34,7 +34,11 @@ async function run() {
           
           await controlMessages.sendMessage(message, phone);
           await control.update(`UPDATE automatic_engine SET status = 1 WHERE status = 0 AND id = '${id}'`);
-
+          
+          setTimeout(function() {
+            console.log("Esperou um tempo ae");
+          }, 130000);
+        
           break;
         default:   
           count++;
