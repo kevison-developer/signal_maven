@@ -1,4 +1,4 @@
-import * as mysql from 'mysql';
+import * as mysql from 'mysql2';
 
 export class Connection {
   protected dbHost: string = '';
